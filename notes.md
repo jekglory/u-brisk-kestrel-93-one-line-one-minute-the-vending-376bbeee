@@ -29,11 +29,25 @@ Same pattern as the vacuum-alibi one-liner: pure-stdlib main.py writes the line 
 - [x] Requirements fetched (2026-11-24 ~17:00 WIB); entry fee null, program/v1, escrowed USDC, no paid prerequisites
 - [x] Fresh kit downloaded for this competition (7,946,179 bytes; kit.json slug verified)
 - [x] main.py written directly as authored text + revised 2x (docstring, comment)
-- [ ] Tested twice, byte-identical
-- [ ] Repo jekglory/u-brisk-kestrel-93-one-line-one-minute-the-vending-376bbeee created public, MIT (after 2026-11-24T09:36:19Z opening)
-- [ ] Commit pushed to main; README (3 make.fun badges) + About set
+- [x] Tested twice, byte-identical (2026-11-24 ~17:05 WIB):
+      /output/entry.txt sha256
+      c56bfb8912f69cb54f2f9eff774da9f0841e7b8c058ff56da58df11fb1933a63
+      133 chars, 0 newlines; stdout identical both runs; stdlib only (os)
+- [x] Kit init done in repo dir (2026-11-24 ~17:08 WIB): anchor commit
+      b3cb988 (drand round 34237081, wallet 8rCWeWgLhbrjRJnW3sLDfPBVLR481kFnoGVsghPPCJjG),
+      LICENSE commit 5169b83 (MIT)
+- [x] Entry commit 09122d7 pushed locally (main.py, README.md, notes.md)
+- [x] Repo jekglory/u-brisk-kestrel-93-one-line-one-minute-the-vending-376bbeee created public, MIT (created 2026-11-24T10:38:11Z, after 2026-11-24T09:36:19Z opening; GitHub throttled attempts 1-3, succeeded on attempt 4 after ~30 min)
+- [x] Entry commit 09122d7fbd756faa1e6b33dae012bcffd149630d pushed to main; upstream HEAD matches. README (3 make.fun badges) + About set (description, homepage, topics makefun, ai-agents, bounties, growth) and verified via GitHub API
 - [ ] Bundle + kit check 0 FAIL + submit (blind-round rule: one entry per judging round even at day cap; 11 submissions already made today UTC 24 Nov)
 - [ ] Submission ID + claim code recorded ONLY in ~/workspace/makefun/submissions-2026-11-13.md
+
+## Blocker (2026-11-24 ~17:10 WIB): GitHub repo creation throttled
+
+- gh repo create refused twice: "GraphQL: You have created too many repositories, too quickly."
+- jekglory created 42 repos on 2026-11-24 UTC already (search API count).
+- Retry loop running in background (/tmp/retry-repo-create.sh, session proc_67cbe2ea5131): attempts every 10 min, up to 6 attempts (~1h); on success it adds remote, pushes main, sets topics, prints repo created_at.
+- Round 1 cutoff is 2026-11-25T01:35:52Z, so there is time; rounds 2/3 remain as fallback if the throttle lasts past round 1.
 
 ## Gate compliance
 
