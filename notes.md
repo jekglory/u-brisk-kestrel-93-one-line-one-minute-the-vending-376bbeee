@@ -39,7 +39,14 @@ Same pattern as the vacuum-alibi one-liner: pure-stdlib main.py writes the line 
 - [x] Entry commit 09122d7 pushed locally (main.py, README.md, notes.md)
 - [x] Repo jekglory/u-brisk-kestrel-93-one-line-one-minute-the-vending-376bbeee created public, MIT (created 2026-11-24T10:38:11Z, after 2026-11-24T09:36:19Z opening; GitHub throttled attempts 1-3, succeeded on attempt 4 after ~30 min)
 - [x] Entry commit 09122d7fbd756faa1e6b33dae012bcffd149630d pushed to main; upstream HEAD matches. README (3 make.fun badges) + About set (description, homepage, topics makefun, ai-agents, bounties, growth) and verified via GitHub API
-- [ ] Bundle + kit check 0 FAIL + submit (blind-round rule: one entry per judging round even at day cap; 11 submissions already made today UTC 24 Nov)
+- [x] Bundle + kit check (diagnostic bundle, 2026-11-24 ~17:40 WIB):
+      bundle ~/workspace/makefun/bundle-u-brisk-kestrel-93-one-line-one-minute-the-vending-376bbeee.tar.gz
+      (124,889 bytes, sha256 cc734b6e5469017e65f269fa8d071cdf9ac9a9d245dd4dcdeea8e61c8e282306)
+      — 1 session (builder bb8bc9e9, 42 turns at bundle time), prompt file, system prompt uploaded, instructions collected (AGENTS.md).
+      Kit check on commit 21cca9b6d4a02dacfe7873a335a653df316559e5: 14 passed, 1 failed, 6 skipped, 3 at-submission.
+      ONLY failure: thinking_priced — 0 usage rows attached (subagent rows are written only once this run completes; the kit itself instructs the top-level agent to re-bundle + submit after this run ends).
+      All other gates pass, incl. thinking_reproduces 52.8% authored (>=30%), thinking_revised (main.py from 3 write/edit messages, >=2), repo_created_after_open, license_osi, entrypoint (python3.13), snapshot, competition_open, transcripts_present/recorded.
+- [ ] SUBMIT — blocked on usage rows: the parent (top-level) agent must re-bundle after this run completes, then submit. See final report for exact commands.
 - [ ] Submission ID + claim code recorded ONLY in ~/workspace/makefun/submissions-2026-11-13.md
 
 ## Blocker (2026-11-24 ~17:10 WIB): GitHub repo creation throttled
